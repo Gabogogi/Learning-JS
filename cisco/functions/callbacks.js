@@ -12,6 +12,15 @@ let outer = function(callback){
         clearInterval(timerId);
    }, 5500);
 }
-console.log('test 1')
+/* console.log('test 1')
 outer(inner)
-console.log('test 2')
+console.log('test 2') */
+
+// Example of callback function
+let add = (a, b) => !Number.isInteger(a) || !Number.isInteger(b) ? Nan: a + b;
+
+function action (callback, a, b){
+    return callback(a, b);
+}
+
+console.log(action(add, 6,7));
