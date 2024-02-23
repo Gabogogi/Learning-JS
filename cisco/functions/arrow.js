@@ -35,3 +35,6 @@ consider skipping the if statement. */
 let numbers = [50, 10, 40, 30, 20];
 let sorted = numbers.sort((a, b) => (a < b) ? -1 : (a > b) ? 1 : 0);
 console.log(sorted); // [10, 20, 30, 40, 50]
+
+/* fibbonacci in arrow */
+let fibb = n => n == 0 ? 0 : (n == 1 ? 1 : fibb(n - 1) + fibb(n - 2));
