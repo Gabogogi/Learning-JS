@@ -38,3 +38,14 @@ console.log(sorted); // [10, 20, 30, 40, 50]
 
 /* fibbonacci in arrow */
 let fibb = n => n == 0 ? 0 : (n == 1 ? 1 : fibb(n - 1) + fibb(n - 2));
+
+/* Exercise 8 */
+function fibbIter(n) {
+   let a = 0, b = 1;
+   for (let i = 2; i <= n; i++) {
+       let c = a;
+       a = b;
+       b += c;
+   }
+   return b;
+}
