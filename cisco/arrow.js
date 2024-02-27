@@ -18,3 +18,7 @@ console.log(helloNew2())
 helloThere = (myName) => `My name is ${myName}`
 
 console.log(helloThere('John Doe'))
+
+// if there is one parameter, you can skip the parantheses
+helloNoPara = nombre => `Mi nombre es ${nombre}`
+console.log(helloNoPara('John Doe'))
