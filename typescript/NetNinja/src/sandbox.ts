@@ -33,3 +33,12 @@ let playerTwo: {
   age: number,
   isMessi: boolean
 }; // we can use this format for future playerTwo objects
+
+// ---------------ANY----------------------------
+
+// reverse JS. All these statemnets are avalid
+let room: any = 25;
+
+room = true;
+room = 'Seven';
+console.log('test');
