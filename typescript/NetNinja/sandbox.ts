@@ -1,45 +1,35 @@
-const character = 'luigi';
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-let age = 30;
-// we can use Python style declarations fr
-// args passe to a function
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
-}
+// we can assign later
+// arrays
+let ninjas: string[]; // allowed -> we should specify what type
 
-// console.log(circ(7));
 
-// ARRAYS
-let names = ['Luigi', 'Mario', 'Yoshi']
+// union types
+// to declare mixed types, we can use union types
+let mixed: (string|number)[] = [];
+mixed.push('hello');
+mixed.push(56);
+// Invalid: mixed.push(false);
 
-names.push('Toad');
+// We can also use union on non-array variables
+// suppose we have uid that can ether be a no or string
+let uid: string|number; // we don't have to use paranthesis
 
-let numbers = [1, 4];
+uid = '13';
+uid = 45;
 
-// if we wish to have an array with mixed types, we should declare at the beginning
-let mixedTypes = [1, 'two', 3]
+// objects
+let player: object;
 
-mixedTypes.push(56, 'Ian');
-console.log(mixedTypes);
+player = { name: 'messi', club: 'Miami' };
 
-let ninja = {
-  name: 'Messi',
-  belt: 'black',
-  age: 56,
-  club: 'AL Nasse' // This gives an error since it wasnt in the original object
-};
-
-// wrong
-// ninja.age = 'Hei';
-// also, we can't add new properties to the field
-
-// ninja.skills = ['football', 'goat'];
-// if we declare  new object, it has to have the same
-// structure of the initial object
-
-ninja = {
-  name: 'cr7',
-  belt: 'blue',
-  age: 67
-}
-console.log(ninja);
+let playerTwo: {
+  name: string,
+  club: string,
+  age: number,
+  isMessi: boolean
+}; // we can use this format for future playerTwo objects
