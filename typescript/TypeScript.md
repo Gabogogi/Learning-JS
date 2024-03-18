@@ -15,3 +15,5 @@ Type Inference: TypeScript's type inference system automatically deduces the typ
 Union Types and Intersection Types: Union types allow a variable to have multiple possible types, while intersection types combine multiple types into one. These features enable more flexible type definitions.
 
 Type Assertions: Type assertions allow developers to explicitly specify a type for a value when TypeScript's type inference cannot determine it automatically. This is useful when working with values that have a more specific type than TypeScript can infer.
+
+TypeScript interfaces are a way to define the structure of objects in TypeScript. They provide a mechanism for describing the shape of objects, including the names and types of their properties and methods, without providing an implementation.
